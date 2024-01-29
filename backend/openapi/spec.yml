@@ -1,0 +1,183 @@
+openapi: 3.0.3
+info:
+  title: Items API
+  description: |-
+    This is a sample Item Store Server based on the OpenAPI 3.0 specification for livetable.
+  version: 0.1.0
+  contact:
+    email: k.i.zelenin@yandex.ru
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+  # TODO: do something with that pls
+  - url: http://localhost:3000/api/v1
+tags:
+  - name: item
+    description: Item's CRUD
+paths:
+  /item/all:
+    post:
+      tags:
+        - item
+      summary: Get paginated items
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Params"
+      responses:
+        '200':
+          description: A list of items
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Item'
+  /item/count:
+    get:
+      tags:
+        - item
+      summary: Get all items count
+      responses:
+        '200':
+          description: A list of items
+          content:
+            application/json:
+              schema:
+                type: number
+  /item/fields:
+    get:
+      tags:
+        - item
+      summary: Get all items fields
+      responses:
+        '200':
+          description: A list of items
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+  /item/create:
+    post:
+      tags:
+        - item
+      summary: Create new item
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Fields"
+      responses:
+        '201':
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /item/update/{id}:
+    put:
+      tags:
+        - item
+      summary: Update item
+      operationId: updateItem
+      parameters:
+        - name: id
+          in: path
+          description: id of updating item
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Update an existent item in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Item'
+      responses:
+        '200':
+          description: Updated item
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /item/delete/{id}:
+    delete:
+      tags:
+        - item
+      summary: Delete existed item
+      operationId: deleteItem
+      parameters:
+        - name: id
+          in: path
+          description: id of updating item
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: item deleted
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Item:
+      type: object
+      properties:
+        _id:
+          type: string
+        fields:
+          type: object
+      required:
+        - id
+        - fields
+    Error:
+      type: object
+      description: error answer
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+    Fields:
+      type: object
+      description: Item fields
+      example:   # Sample object
+        name: Jessica Smith
+        phone: 89827654532
+        email: jessica_smith@swag.com
+    Params:
+      type: object
+      description: search documents parameters
+      required:
+        - page
+        - itemsPerPage
+      properties:
+        page:
+          type: integer
+          format: int32
+        itemsPerPage:
+          type: integer
+          format: int32
+      example:
+        page: 1
+        itemsPerPage: 15

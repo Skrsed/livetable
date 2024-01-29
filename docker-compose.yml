@@ -1,0 +1,50 @@
+version: '3.8'
+services:
+  # frontend:
+  #   build:
+  #     context: frontend
+  #     dockerfile: dev.Dockerfile
+  #   ports:
+  #     - 80:3001
+  #   volumes:
+  #     - ./backend:/usr/src/app
+  #   networks:
+  #     - nginx-net
+  # backend:
+  #   build:
+  #     context: backend
+  #     dockerfile: dev.Dockerfile
+  #   ports:
+  #     - 8080:3001
+  #   volumes:
+  #     - ./backend:/usr/src/app
+  #   networks:
+  #     - mongodb-net
+  #     - nginx-net
+  mongodb:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - ./.mnt/mongo:/var/lib/mongodb/data
+    networks:
+      - mongodb-net
+  # nginx:
+  #   build:
+  #     context: nginx
+  #     dockerfile: dev.Dockerfile
+  #   ports:
+  #     - "8080:80"
+  #   volumes:
+  #     - ./.mnt/nginx/logs:/var/log/nginx/
+  #   networks:
+  #     - nginx-net
+networks:
+  mongodb-net:
+    driver: bridge
+  nginx-net:
+    driver: bridge
