@@ -4,7 +4,7 @@ import { Logger } from 'pino'
 
 export const makeSocket = (log: Logger, server: HttpServer): SocketServer => {
     const {
-        ORIGIN_HOST = 'http://localhost',
+        ORIGIN_HOST = 'http://backend',
         ORIGIN_PORT = '5173'
     } = process.env
 

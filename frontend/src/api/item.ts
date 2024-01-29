@@ -8,14 +8,15 @@ interface RequestArgs {
 
 export interface Pagination {
     page: number,
-    itemsPerPage: number 
-} 
+    itemsPerPage: number
+}
 
 const request = ({ method, endpoint, body: requestBody }: RequestArgs) => {
     const body = JSON.stringify(requestBody)
 
-    return fetch(`http://localhost:3000/api/v1/${endpoint}`, {
-        method, 
+    // TODO: env
+    return fetch(`http://backend:3000/api/v1/${endpoint}`, {
+        method,
         mode: 'cors',
         cache: 'no-cache',
         headers: {

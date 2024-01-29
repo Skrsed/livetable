@@ -1,26 +1,29 @@
 version: '3.8'
 services:
-  # frontend:
-  #   build:
-  #     context: frontend
-  #     dockerfile: dev.Dockerfile
-  #   ports:
-  #     - 80:3001
-  #   volumes:
-  #     - ./backend:/usr/src/app
-  #   networks:
-  #     - nginx-net
-  # backend:
-  #   build:
-  #     context: backend
-  #     dockerfile: dev.Dockerfile
-  #   ports:
-  #     - 8080:3001
-  #   volumes:
-  #     - ./backend:/usr/src/app
-  #   networks:
-  #     - mongodb-net
-  #     - nginx-net
+  frontend:
+    build:
+      context: frontend
+      dockerfile: dev.Dockerfile
+    ports:
+      - 8081:5173
+    volumes:
+      - ./frontend:/usr/src/app
+    networks:
+      - nginx-net
+  backend:
+    build:
+      context: backend
+      dockerfile: dev.Dockerfile
+    environment:
+      MONGO_HOST: mongodb
+    ports:
+      - 8080:3000
+    volumes:
+      - ./backend:/usr/src/app
+      - /app/node_modules
+    networks:
+      - mongodb-net
+      - nginx-net
   mongodb:
     image: mongo
     restart: always
@@ -33,16 +36,20 @@ services:
       - ./.mnt/mongo:/var/lib/mongodb/data
     networks:
       - mongodb-net
-  # nginx:
-  #   build:
-  #     context: nginx
-  #     dockerfile: dev.Dockerfile
-  #   ports:
-  #     - "8080:80"
-  #   volumes:
-  #     - ./.mnt/nginx/logs:/var/log/nginx/
-  #   networks:
-  #     - nginx-net
+  nginx:
+    depends_on:
+      - backend
+      - frontend
+    restart: always
+    build:
+      context: nginx
+      dockerfile: dev.Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./.mnt/nginx/logs:/var/log/nginx/
+    networks:
+      - nginx-net
 networks:
   mongodb-net:
     driver: bridge
