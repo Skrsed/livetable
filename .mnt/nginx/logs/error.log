@@ -1,0 +1,208 @@
+2024/01/29 20:53:20 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:53:29 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:53:38 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:53:47 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:53:56 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:54:06 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:54:18 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:54:33 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:54:54 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:55:28 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:56:28 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:57:28 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:57:37 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:57:46 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:57:55 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:58:04 [emerg] 1#1: host not found in upstream "client:5173" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:58:31 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:58:40 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:58:49 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:58:58 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 20:59:07 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:00:38 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:00:50 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:01:00 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:01:09 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:01:18 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:01:30 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:01:43 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:01:58 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:02:19 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:02:54 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:03:54 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:05:02 [emerg] 1#1: host not found in upstream "client:8081" in /etc/nginx/conf.d/default.conf:2
+2024/01/29 21:06:25 [notice] 1#1: using the "epoll" event method
+2024/01/29 21:06:25 [notice] 1#1: nginx/1.25.3
+2024/01/29 21:06:25 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/01/29 21:06:25 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/01/29 21:06:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/01/29 21:06:25 [notice] 1#1: start worker processes
+2024/01/29 21:06:25 [notice] 1#1: start worker process 28
+2024/01/29 21:06:25 [notice] 1#1: start worker process 29
+2024/01/29 21:06:25 [notice] 1#1: start worker process 30
+2024/01/29 21:06:25 [notice] 1#1: start worker process 31
+2024/01/29 21:06:25 [notice] 1#1: start worker process 32
+2024/01/29 21:06:25 [notice] 1#1: start worker process 33
+2024/01/29 21:06:25 [notice] 1#1: start worker process 34
+2024/01/29 21:06:25 [notice] 1#1: start worker process 35
+2024/01/29 21:09:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/01/29 21:09:50 [notice] 34#34: gracefully shutting down
+2024/01/29 21:09:50 [notice] 29#29: gracefully shutting down
+2024/01/29 21:09:50 [notice] 28#28: gracefully shutting down
+2024/01/29 21:09:50 [notice] 30#30: gracefully shutting down
+2024/01/29 21:09:50 [notice] 35#35: gracefully shutting down
+2024/01/29 21:09:50 [notice] 32#32: gracefully shutting down
+2024/01/29 21:09:50 [notice] 33#33: gracefully shutting down
+2024/01/29 21:09:50 [notice] 34#34: exiting
+2024/01/29 21:09:50 [notice] 31#31: gracefully shutting down
+2024/01/29 21:09:50 [notice] 29#29: exiting
+2024/01/29 21:09:50 [notice] 28#28: exiting
+2024/01/29 21:09:50 [notice] 30#30: exiting
+2024/01/29 21:09:50 [notice] 35#35: exiting
+2024/01/29 21:09:50 [notice] 32#32: exiting
+2024/01/29 21:09:50 [notice] 33#33: exiting
+2024/01/29 21:09:50 [notice] 34#34: exit
+2024/01/29 21:09:50 [notice] 31#31: exiting
+2024/01/29 21:09:50 [notice] 29#29: exit
+2024/01/29 21:09:50 [notice] 28#28: exit
+2024/01/29 21:09:50 [notice] 30#30: exit
+2024/01/29 21:09:50 [notice] 35#35: exit
+2024/01/29 21:09:50 [notice] 32#32: exit
+2024/01/29 21:09:50 [notice] 33#33: exit
+2024/01/29 21:09:50 [notice] 31#31: exit
+2024/01/29 21:09:50 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/01/29 21:09:50 [notice] 1#1: worker process 28 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: worker process 29 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: worker process 30 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: worker process 33 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: worker process 34 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: worker process 35 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/29 21:09:50 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2024/01/29 21:09:50 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/01/29 21:09:50 [notice] 1#1: worker process 31 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/29 21:09:50 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/01/29 21:09:50 [notice] 1#1: worker process 32 exited with code 0
+2024/01/29 21:09:50 [notice] 1#1: exit
+2024/01/29 21:09:52 [notice] 1#1: using the "epoll" event method
+2024/01/29 21:09:52 [notice] 1#1: nginx/1.25.3
+2024/01/29 21:09:52 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/01/29 21:09:52 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/01/29 21:09:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/01/29 21:09:52 [notice] 1#1: start worker processes
+2024/01/29 21:09:52 [notice] 1#1: start worker process 28
+2024/01/29 21:09:52 [notice] 1#1: start worker process 29
+2024/01/29 21:09:52 [notice] 1#1: start worker process 30
+2024/01/29 21:09:52 [notice] 1#1: start worker process 31
+2024/01/29 21:09:52 [notice] 1#1: start worker process 32
+2024/01/29 21:09:52 [notice] 1#1: start worker process 33
+2024/01/29 21:09:52 [notice] 1#1: start worker process 34
+2024/01/29 21:09:52 [notice] 1#1: start worker process 35
+2024/01/29 21:13:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/01/29 21:13:29 [notice] 28#28: gracefully shutting down
+2024/01/29 21:13:29 [notice] 29#29: gracefully shutting down
+2024/01/29 21:13:29 [notice] 29#29: exiting
+2024/01/29 21:13:29 [notice] 33#33: gracefully shutting down
+2024/01/29 21:13:29 [notice] 30#30: gracefully shutting down
+2024/01/29 21:13:29 [notice] 31#31: gracefully shutting down
+2024/01/29 21:13:29 [notice] 31#31: exiting
+2024/01/29 21:13:29 [notice] 34#34: gracefully shutting down
+2024/01/29 21:13:29 [notice] 35#35: gracefully shutting down
+2024/01/29 21:13:29 [notice] 35#35: exiting
+2024/01/29 21:13:29 [notice] 32#32: gracefully shutting down
+2024/01/29 21:13:29 [notice] 28#28: exiting
+2024/01/29 21:13:29 [notice] 29#29: exit
+2024/01/29 21:13:29 [notice] 33#33: exiting
+2024/01/29 21:13:29 [notice] 30#30: exiting
+2024/01/29 21:13:29 [notice] 31#31: exit
+2024/01/29 21:13:29 [notice] 34#34: exiting
+2024/01/29 21:13:29 [notice] 35#35: exit
+2024/01/29 21:13:29 [notice] 32#32: exiting
+2024/01/29 21:13:29 [notice] 28#28: exit
+2024/01/29 21:13:29 [notice] 33#33: exit
+2024/01/29 21:13:29 [notice] 30#30: exit
+2024/01/29 21:13:29 [notice] 34#34: exit
+2024/01/29 21:13:29 [notice] 32#32: exit
+2024/01/29 21:13:29 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/01/29 21:13:29 [notice] 1#1: worker process 28 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: worker process 30 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: worker process 33 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: worker process 34 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: worker process 35 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/29 21:13:29 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/01/29 21:13:29 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/01/29 21:13:29 [notice] 1#1: worker process 29 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: worker process 31 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: worker process 32 exited with code 0
+2024/01/29 21:13:29 [notice] 1#1: exit
+2024/01/29 21:13:35 [notice] 1#1: using the "epoll" event method
+2024/01/29 21:13:35 [notice] 1#1: nginx/1.25.3
+2024/01/29 21:13:35 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/01/29 21:13:35 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/01/29 21:13:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/01/29 21:13:35 [notice] 1#1: start worker processes
+2024/01/29 21:13:35 [notice] 1#1: start worker process 28
+2024/01/29 21:13:35 [notice] 1#1: start worker process 29
+2024/01/29 21:13:35 [notice] 1#1: start worker process 30
+2024/01/29 21:13:35 [notice] 1#1: start worker process 31
+2024/01/29 21:13:35 [notice] 1#1: start worker process 32
+2024/01/29 21:13:35 [notice] 1#1: start worker process 33
+2024/01/29 21:13:35 [notice] 1#1: start worker process 34
+2024/01/29 21:13:35 [notice] 1#1: start worker process 35
+2024/01/29 21:15:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/01/29 21:15:36 [notice] 29#29: gracefully shutting down
+2024/01/29 21:15:36 [notice] 34#34: gracefully shutting down
+2024/01/29 21:15:36 [notice] 33#33: gracefully shutting down
+2024/01/29 21:15:36 [notice] 30#30: gracefully shutting down
+2024/01/29 21:15:36 [notice] 29#29: exiting
+2024/01/29 21:15:36 [notice] 32#32: gracefully shutting down
+2024/01/29 21:15:36 [notice] 35#35: gracefully shutting down
+2024/01/29 21:15:36 [notice] 31#31: gracefully shutting down
+2024/01/29 21:15:36 [notice] 28#28: gracefully shutting down
+2024/01/29 21:15:36 [notice] 31#31: exiting
+2024/01/29 21:15:36 [notice] 34#34: exiting
+2024/01/29 21:15:36 [notice] 33#33: exiting
+2024/01/29 21:15:36 [notice] 30#30: exiting
+2024/01/29 21:15:36 [notice] 29#29: exit
+2024/01/29 21:15:36 [notice] 32#32: exiting
+2024/01/29 21:15:36 [notice] 35#35: exiting
+2024/01/29 21:15:36 [notice] 31#31: exit
+2024/01/29 21:15:36 [notice] 28#28: exiting
+2024/01/29 21:15:36 [notice] 34#34: exit
+2024/01/29 21:15:36 [notice] 33#33: exit
+2024/01/29 21:15:36 [notice] 30#30: exit
+2024/01/29 21:15:36 [notice] 32#32: exit
+2024/01/29 21:15:36 [notice] 35#35: exit
+2024/01/29 21:15:36 [notice] 28#28: exit
+2024/01/29 21:15:36 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/01/29 21:15:36 [notice] 1#1: worker process 33 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/29 21:15:36 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/01/29 21:15:36 [notice] 1#1: worker process 28 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: worker process 29 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: worker process 30 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: worker process 31 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: worker process 32 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: worker process 34 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: worker process 35 exited with code 0
+2024/01/29 21:15:36 [notice] 1#1: exit
+2024/01/29 21:15:41 [notice] 1#1: using the "epoll" event method
+2024/01/29 21:15:41 [notice] 1#1: nginx/1.25.3
+2024/01/29 21:15:41 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/01/29 21:15:41 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/01/29 21:15:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/01/29 21:15:41 [notice] 1#1: start worker processes
+2024/01/29 21:15:41 [notice] 1#1: start worker process 28
+2024/01/29 21:15:41 [notice] 1#1: start worker process 29
+2024/01/29 21:15:41 [notice] 1#1: start worker process 30
+2024/01/29 21:15:41 [notice] 1#1: start worker process 31
+2024/01/29 21:15:41 [notice] 1#1: start worker process 32
+2024/01/29 21:15:41 [notice] 1#1: start worker process 33
+2024/01/29 21:15:41 [notice] 1#1: start worker process 34
+2024/01/29 21:15:41 [notice] 1#1: start worker process 35
+2024/01/29 21:16:10 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.30.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.30.0.2:80/", host: "localhost"
+2024/01/29 21:16:11 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.30.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.30.0.2:80/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2024/01/29 21:16:44 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.30.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.30.0.2:80/", host: "localhost"
+2024/01/29 21:16:45 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.30.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.30.0.2:80/favicon.ico", host: "localhost", referrer: "http://localhost/"
