@@ -1622,3 +1622,125 @@
 2024/01/31 01:59:29 [error] 29#29: *28 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
 2024/01/31 01:59:30 [error] 29#29: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /api-docs/ HTTP/1.1", upstream: "http://172.18.0.3:3000/api-docs/", host: "localhost:3000"
 2024/01/31 01:59:31 [error] 29#29: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /api-docs/ HTTP/1.1", upstream: "http://172.18.0.3:3000/api-docs/", host: "localhost:3000"
+2024/01/31 02:42:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/01/31 02:42:53 [notice] 29#29: gracefully shutting down
+2024/01/31 02:42:53 [notice] 28#28: gracefully shutting down
+2024/01/31 02:42:53 [notice] 35#35: gracefully shutting down
+2024/01/31 02:42:53 [notice] 33#33: gracefully shutting down
+2024/01/31 02:42:53 [notice] 32#32: gracefully shutting down
+2024/01/31 02:42:53 [notice] 28#28: exiting
+2024/01/31 02:42:53 [notice] 34#34: gracefully shutting down
+2024/01/31 02:42:53 [notice] 30#30: gracefully shutting down
+2024/01/31 02:42:53 [notice] 31#31: gracefully shutting down
+2024/01/31 02:42:53 [notice] 29#29: exiting
+2024/01/31 02:42:53 [notice] 35#35: exiting
+2024/01/31 02:42:53 [notice] 33#33: exiting
+2024/01/31 02:42:53 [notice] 28#28: exit
+2024/01/31 02:42:53 [notice] 29#29: exit
+2024/01/31 02:42:53 [notice] 31#31: exiting
+2024/01/31 02:42:53 [notice] 32#32: exiting
+2024/01/31 02:42:53 [notice] 35#35: exit
+2024/01/31 02:42:53 [notice] 34#34: exiting
+2024/01/31 02:42:53 [notice] 33#33: exit
+2024/01/31 02:42:53 [notice] 30#30: exiting
+2024/01/31 02:42:53 [notice] 31#31: exit
+2024/01/31 02:42:53 [notice] 32#32: exit
+2024/01/31 02:42:53 [notice] 34#34: exit
+2024/01/31 02:42:53 [notice] 30#30: exit
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2024/01/31 02:42:53 [notice] 1#1: worker process 33 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: worker process 35 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/01/31 02:42:53 [notice] 1#1: worker process 28 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: worker process 32 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/01/31 02:42:53 [notice] 1#1: worker process 29 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: worker process 31 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2024/01/31 02:42:53 [notice] 1#1: worker process 34 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: signal 29 (SIGIO) received
+2024/01/31 02:42:53 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/01/31 02:42:53 [notice] 1#1: worker process 30 exited with code 0
+2024/01/31 02:42:53 [notice] 1#1: exit
+2024/01/31 02:42:59 [notice] 1#1: using the "epoll" event method
+2024/01/31 02:42:59 [notice] 1#1: nginx/1.25.3
+2024/01/31 02:42:59 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/01/31 02:42:59 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/01/31 02:42:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/01/31 02:42:59 [notice] 1#1: start worker processes
+2024/01/31 02:42:59 [notice] 1#1: start worker process 28
+2024/01/31 02:42:59 [notice] 1#1: start worker process 29
+2024/01/31 02:42:59 [notice] 1#1: start worker process 30
+2024/01/31 02:42:59 [notice] 1#1: start worker process 31
+2024/01/31 02:42:59 [notice] 1#1: start worker process 32
+2024/01/31 02:42:59 [notice] 1#1: start worker process 33
+2024/01/31 02:42:59 [notice] 1#1: start worker process 34
+2024/01/31 02:42:59 [notice] 1#1: start worker process 35
+2024/01/31 02:43:00 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:01 [error] 29#29: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:02 [error] 30#30: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:02 [error] 31#31: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:04 [error] 32#32: *9 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:05 [error] 33#33: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:07 [error] 34#34: *13 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:07 [error] 28#28: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:10 [error] 28#28: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:11 [error] 28#28: *19 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:13 [error] 28#28: *21 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:13 [error] 28#28: *23 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:16 [error] 28#28: *25 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:17 [error] 28#28: *27 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:19 [error] 28#28: *29 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:19 [error] 28#28: *31 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:22 [error] 28#28: *33 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:23 [error] 28#28: *35 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:25 [error] 28#28: *37 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:25 [error] 28#28: *39 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:28 [error] 28#28: *41 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:29 [error] 28#28: *43 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:31 [error] 28#28: *45 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:31 [error] 35#35: *47 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:34 [error] 29#29: *49 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:35 [error] 29#29: *51 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:38 [error] 29#29: *53 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:40 [error] 29#29: *55 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:41 [error] 29#29: *57 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:41 [error] 29#29: *59 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:46 [error] 29#29: *61 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:46 [error] 29#29: *63 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:47 [error] 29#29: *65 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:50 [error] 29#29: *67 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:52 [error] 29#29: *69 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:53 [error] 29#29: *71 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:57 [error] 29#29: *73 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:57 [error] 29#29: *75 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:58 [error] 29#29: *77 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:43:59 [error] 29#29: *79 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:04 [error] 30#30: *81 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:04 [error] 30#30: *83 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:05 [error] 30#30: *85 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:08 [error] 30#30: *87 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:11 [error] 30#30: *89 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:11 [error] 30#30: *91 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:12 [error] 30#30: *93 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:17 [error] 30#30: *95 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:17 [error] 30#30: *97 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:18 [error] 30#30: *99 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:21 [error] 30#30: *101 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:25 [error] 30#30: *103 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:25 [error] 30#30: *105 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:25 [error] 30#30: *107 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:31 [error] 30#30: *109 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:31 [error] 30#30: *111 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:33 [error] 31#31: *113 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:36 [error] 31#31: *115 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:38 [error] 31#31: *117 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:40 [error] 31#31: *119 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:41 [error] 31#31: *121 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/01/31 02:44:43 [error] 31#31: *123 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.2:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"

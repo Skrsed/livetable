@@ -10,6 +10,14 @@ services:
       - ./frontend:/usr/src/app
     networks:
       - nginx-net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 200M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
   backend:
     build:
       context: backend
@@ -22,8 +30,16 @@ services:
     networks:
       - mongodb-net
       - nginx-net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 200M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
   mongodb:
-    image: mongo
+    image: mongo:4.4
     restart: always
     ports:
       - 27017:27017
@@ -34,6 +50,14 @@ services:
       - ./.mnt/mongo:/var/lib/mongodb/data
     networks:
       - mongodb-net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 200M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
   nginx:
     depends_on:
       - backend
@@ -49,6 +73,14 @@ services:
       - ./.mnt/nginx/logs:/var/log/nginx/
     networks:
       - nginx-net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 200M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
 networks:
   mongodb-net:
     driver: bridge
