@@ -1,4 +1,4 @@
-import express, { Application } from 'express'
+import express, { Application, Response } from 'express'
 import dotenv from 'dotenv'
 import { createServer, Server as HttpServer } from 'http'
 import { Server as SocketServer } from 'socket.io'
@@ -33,6 +33,8 @@ const run = async () => {
     const socket: SocketServer = makeSocket(logger, server)
 
     app.use('/api/v1/', makeRoutes(logger, socket))
+
+    app.get('/', (_, req: Response) => req.send('healthcheck succeed'))
 
     initErrorHandler(app)
     makeDocsPage(app)
