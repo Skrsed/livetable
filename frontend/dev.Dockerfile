@@ -1,12 +1,6 @@
 FROM node:alpine as builder
 WORKDIR /app
 
-ARG VITE_SERVER_HOST                       
-ENV VITE_SERVER_HOST=$VITE_SERVER_HOST
-
-ARG VITE_SERVER_PORT
-ENV VITE_SERVER_PORT=${VITE_SERVER_PORT}
-
 COPY ./package.json ./
 RUN npm i
 COPY . .
