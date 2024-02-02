@@ -1885,3 +1885,206 @@
 2024/02/02 17:39:41 [error] 28#28: *54 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
 2024/02/02 17:39:44 [error] 28#28: *56 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
 2024/02/02 17:39:47 [error] 28#28: *58 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:08:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/02/02 21:08:38 [notice] 28#28: gracefully shutting down
+2024/02/02 21:08:38 [notice] 32#32: gracefully shutting down
+2024/02/02 21:08:38 [notice] 29#29: gracefully shutting down
+2024/02/02 21:08:38 [notice] 35#35: gracefully shutting down
+2024/02/02 21:08:38 [notice] 28#28: exiting
+2024/02/02 21:08:38 [notice] 30#30: gracefully shutting down
+2024/02/02 21:08:38 [notice] 31#31: gracefully shutting down
+2024/02/02 21:08:38 [notice] 34#34: gracefully shutting down
+2024/02/02 21:08:38 [notice] 32#32: exiting
+2024/02/02 21:08:38 [notice] 29#29: exiting
+2024/02/02 21:08:38 [notice] 29#29: exit
+2024/02/02 21:08:38 [notice] 35#35: exiting
+2024/02/02 21:08:38 [notice] 33#33: gracefully shutting down
+2024/02/02 21:08:38 [notice] 28#28: exit
+2024/02/02 21:08:38 [notice] 32#32: exit
+2024/02/02 21:08:38 [notice] 31#31: exiting
+2024/02/02 21:08:38 [notice] 30#30: exiting
+2024/02/02 21:08:38 [notice] 34#34: exiting
+2024/02/02 21:08:38 [notice] 34#34: exit
+2024/02/02 21:08:38 [notice] 35#35: exit
+2024/02/02 21:08:38 [notice] 33#33: exiting
+2024/02/02 21:08:38 [notice] 30#30: exit
+2024/02/02 21:08:38 [notice] 31#31: exit
+2024/02/02 21:08:38 [notice] 33#33: exit
+2024/02/02 21:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/02/02 21:08:39 [notice] 1#1: worker process 29 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: worker process 32 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/02/02 21:08:39 [notice] 1#1: worker process 28 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/02/02 21:08:39 [notice] 1#1: worker process 33 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: worker process 34 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2024/02/02 21:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/02/02 21:08:39 [notice] 1#1: worker process 30 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2024/02/02 21:08:39 [notice] 1#1: worker process 35 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/02/02 21:08:39 [notice] 1#1: worker process 31 exited with code 0
+2024/02/02 21:08:39 [notice] 1#1: exit
+2024/02/02 21:08:42 [notice] 1#1: using the "epoll" event method
+2024/02/02 21:08:42 [notice] 1#1: nginx/1.25.3
+2024/02/02 21:08:42 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/02/02 21:08:42 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/02/02 21:08:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/02 21:08:42 [notice] 1#1: start worker processes
+2024/02/02 21:08:42 [notice] 1#1: start worker process 28
+2024/02/02 21:08:42 [notice] 1#1: start worker process 29
+2024/02/02 21:08:42 [notice] 1#1: start worker process 30
+2024/02/02 21:08:42 [notice] 1#1: start worker process 31
+2024/02/02 21:08:42 [notice] 1#1: start worker process 32
+2024/02/02 21:08:42 [notice] 1#1: start worker process 33
+2024/02/02 21:08:42 [notice] 1#1: start worker process 34
+2024/02/02 21:08:42 [notice] 1#1: start worker process 35
+2024/02/02 21:08:48 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:08:49 [error] 29#29: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:08:49 [error] 30#30: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/all HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/all", host: "localhost:3000"
+2024/02/02 21:08:49 [error] 31#31: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/count HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/count", host: "localhost:3000"
+2024/02/02 21:08:49 [error] 31#31: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/all HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/all", host: "localhost:3000"
+2024/02/02 21:08:49 [error] 30#30: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/count HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/count", host: "localhost:3000"
+2024/02/02 21:08:50 [error] 32#32: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:08:53 [error] 33#33: *20 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:08:53 [error] 34#34: *22 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:08:56 [error] 35#35: *24 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:08:59 [error] 28#28: *26 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:01 [error] 28#28: *28 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:04 [error] 28#28: *33 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:04 [error] 30#30: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/all HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/all", host: "localhost:3000"
+2024/02/02 21:09:04 [error] 31#31: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/count HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/count", host: "localhost:3000"
+2024/02/02 21:09:04 [error] 31#31: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/all HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/all", host: "localhost:3000"
+2024/02/02 21:09:04 [error] 30#30: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "OPTIONS /api/v1/item/count HTTP/1.1", upstream: "http://172.18.0.3:3000/api/v1/item/count", host: "localhost:3000"
+2024/02/02 21:09:05 [error] 28#28: *41 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:05 [error] 28#28: *43 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:06 [error] 28#28: *45 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:09 [error] 28#28: *47 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:11 [error] 28#28: *49 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:15 [error] 28#28: *51 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:17 [error] 28#28: *53 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:21 [error] 28#28: *55 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:23 [error] 28#28: *57 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:27 [error] 28#28: *59 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:29 [error] 28#28: *61 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:33 [error] 28#28: *63 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:35 [error] 28#28: *65 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:39 [error] 29#29: *67 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:41 [error] 29#29: *69 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:45 [error] 29#29: *71 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:47 [error] 29#29: *73 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:53 [error] 29#29: *75 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:53 [error] 29#29: *77 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:59 [error] 29#29: *79 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:09:59 [error] 29#29: *81 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:10:05 [error] 29#29: *83 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:10:05 [error] 29#29: *85 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:10:11 [error] 29#29: *87 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:10:11 [error] 29#29: *89 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1", upstream: "http://172.18.0.3:3000/socket.io/?EIO=4&transport=websocket", host: "localhost:3000"
+2024/02/02 21:11:09 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/02/02 21:11:09 [notice] 28#28: gracefully shutting down
+2024/02/02 21:11:09 [notice] 35#35: gracefully shutting down
+2024/02/02 21:11:09 [notice] 34#34: gracefully shutting down
+2024/02/02 21:11:09 [notice] 31#31: gracefully shutting down
+2024/02/02 21:11:09 [notice] 34#34: exiting
+2024/02/02 21:11:09 [notice] 29#29: gracefully shutting down
+2024/02/02 21:11:09 [notice] 33#33: gracefully shutting down
+2024/02/02 21:11:09 [notice] 30#30: gracefully shutting down
+2024/02/02 21:11:09 [notice] 32#32: gracefully shutting down
+2024/02/02 21:11:09 [notice] 28#28: exiting
+2024/02/02 21:11:09 [notice] 35#35: exiting
+2024/02/02 21:11:09 [notice] 31#31: exiting
+2024/02/02 21:11:09 [notice] 34#34: exit
+2024/02/02 21:11:09 [notice] 33#33: exiting
+2024/02/02 21:11:09 [notice] 30#30: exiting
+2024/02/02 21:11:09 [notice] 32#32: exiting
+2024/02/02 21:11:09 [notice] 28#28: exit
+2024/02/02 21:11:09 [notice] 35#35: exit
+2024/02/02 21:11:09 [notice] 31#31: exit
+2024/02/02 21:11:09 [notice] 33#33: exit
+2024/02/02 21:11:09 [notice] 30#30: exit
+2024/02/02 21:11:09 [notice] 32#32: exit
+2024/02/02 21:11:09 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/02/02 21:11:09 [notice] 1#1: worker process 31 exited with code 0
+2024/02/02 21:11:09 [notice] 1#1: worker process 33 exited with code 0
+2024/02/02 21:11:09 [notice] 1#1: worker process 34 exited with code 0
+2024/02/02 21:11:09 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:11:09 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/02/02 21:11:09 [notice] 1#1: worker process 28 exited with code 0
+2024/02/02 21:11:09 [notice] 1#1: worker process 30 exited with code 0
+2024/02/02 21:11:09 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:11:09 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/02/02 21:11:09 [notice] 1#1: worker process 32 exited with code 0
+2024/02/02 21:11:09 [notice] 1#1: worker process 35 exited with code 0
+2024/02/02 21:11:09 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:11:20 [notice] 1#1: using the "epoll" event method
+2024/02/02 21:11:20 [notice] 1#1: nginx/1.25.3
+2024/02/02 21:11:20 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/02/02 21:11:20 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/02/02 21:11:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/02 21:11:20 [notice] 1#1: start worker processes
+2024/02/02 21:11:20 [notice] 1#1: start worker process 28
+2024/02/02 21:11:20 [notice] 1#1: start worker process 29
+2024/02/02 21:11:20 [notice] 1#1: start worker process 30
+2024/02/02 21:11:20 [notice] 1#1: start worker process 31
+2024/02/02 21:11:20 [notice] 1#1: start worker process 32
+2024/02/02 21:11:20 [notice] 1#1: start worker process 33
+2024/02/02 21:11:20 [notice] 1#1: start worker process 34
+2024/02/02 21:11:20 [notice] 1#1: start worker process 35
+2024/02/02 21:16:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/02/02 21:16:12 [notice] 28#28: gracefully shutting down
+2024/02/02 21:16:12 [notice] 29#29: gracefully shutting down
+2024/02/02 21:16:12 [notice] 31#31: gracefully shutting down
+2024/02/02 21:16:12 [notice] 31#31: exiting
+2024/02/02 21:16:12 [notice] 30#30: gracefully shutting down
+2024/02/02 21:16:12 [notice] 33#33: gracefully shutting down
+2024/02/02 21:16:12 [notice] 34#34: gracefully shutting down
+2024/02/02 21:16:12 [notice] 35#35: gracefully shutting down
+2024/02/02 21:16:12 [notice] 32#32: gracefully shutting down
+2024/02/02 21:16:12 [notice] 28#28: exiting
+2024/02/02 21:16:12 [notice] 31#31: exit
+2024/02/02 21:16:12 [notice] 33#33: exiting
+2024/02/02 21:16:12 [notice] 34#34: exiting
+2024/02/02 21:16:12 [notice] 35#35: exiting
+2024/02/02 21:16:12 [notice] 32#32: exiting
+2024/02/02 21:16:12 [notice] 28#28: exit
+2024/02/02 21:16:12 [notice] 33#33: exit
+2024/02/02 21:16:12 [notice] 34#34: exit
+2024/02/02 21:16:12 [notice] 35#35: exit
+2024/02/02 21:16:12 [notice] 32#32: exit
+2024/02/02 21:16:13 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/02/02 21:16:13 [notice] 1#1: worker process 31 exited with code 0
+2024/02/02 21:16:13 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:16:13 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/02/02 21:16:13 [notice] 1#1: worker process 28 exited with code 0
+2024/02/02 21:16:13 [notice] 1#1: worker process 33 exited with code 0
+2024/02/02 21:16:13 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:16:13 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/02/02 21:16:13 [notice] 1#1: worker process 32 exited with code 0
+2024/02/02 21:16:13 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:16:13 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2024/02/02 21:16:13 [notice] 1#1: worker process 35 exited with code 0
+2024/02/02 21:16:13 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:16:13 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2024/02/02 21:16:13 [notice] 1#1: worker process 34 exited with code 0
+2024/02/02 21:16:13 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/02 21:16:27 [notice] 1#1: using the "epoll" event method
+2024/02/02 21:16:27 [notice] 1#1: nginx/1.25.3
+2024/02/02 21:16:27 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/02/02 21:16:27 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/02/02 21:16:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/02 21:16:27 [notice] 1#1: start worker processes
+2024/02/02 21:16:27 [notice] 1#1: start worker process 28
+2024/02/02 21:16:27 [notice] 1#1: start worker process 29
+2024/02/02 21:16:27 [notice] 1#1: start worker process 30
+2024/02/02 21:16:27 [notice] 1#1: start worker process 31
+2024/02/02 21:16:27 [notice] 1#1: start worker process 32
+2024/02/02 21:16:27 [notice] 1#1: start worker process 33
+2024/02/02 21:16:27 [notice] 1#1: start worker process 34
+2024/02/02 21:16:27 [notice] 1#1: start worker process 35

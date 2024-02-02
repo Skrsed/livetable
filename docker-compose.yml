@@ -8,8 +8,8 @@ services:
     volumes:
       - ./frontend:/usr/src/app
     environment:
-      - VUE_APP_BACKEND_HOST: "81.22.132.239"
-      - VUE_APP_BACKEND_PORT: "3000"
+      VITE_SERVER_HOST: "81.22.132.239"
+      VITE_CLIENT_HOST: "81.22.132.239"
     networks:
       - nginx-net
     deploy:

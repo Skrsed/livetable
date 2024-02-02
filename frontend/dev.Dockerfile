@@ -1,5 +1,9 @@
 FROM node:alpine as builder
 WORKDIR /app
+
+ARG VITE_SERVER_HOST                       
+ENV VITE_SERVER_HOST=$VITE_SERVER_HOST
+
 COPY ./package.json ./
 RUN npm i
 COPY . .
