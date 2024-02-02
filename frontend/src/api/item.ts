@@ -11,11 +11,18 @@ export interface Pagination {
     itemsPerPage: number
 }
 
+const {
+    SERVER_HOST,
+    SERVER_PORT
+} = import.meta.env
+
+console.log({ SERVER_HOST, SERVER_PORT })
+
 const request = ({ method, endpoint, body: requestBody }: RequestArgs) => {
     const body = JSON.stringify(requestBody)
 
     // TODO: env
-    return fetch(`http://localhost:3000/api/v1/${endpoint}`, {
+    return fetch(`http://${SERVER_HOST}:${SERVER_PORT}/api/v1/${endpoint}`, {
         method,
         mode: 'cors',
         cache: 'no-cache',
