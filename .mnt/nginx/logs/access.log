@@ -718,3 +718,5 @@
 172.18.0.1 - - [02/Feb/2024:21:31:38 +0000] "GET /api/v1/item/count HTTP/1.1" 200 1 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" "-"
 172.18.0.1 - - [02/Feb/2024:21:31:39 +0000] "POST /api/v1/item/all HTTP/1.1" 200 69 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" "-"
 172.18.0.1 - - [02/Feb/2024:21:31:39 +0000] "GET /favicon.ico HTTP/1.1" 200 4286 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" "-"
+172.18.0.1 - - [02/Feb/2024:21:37:46 +0000] "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 101 212 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" "-"
+172.18.0.1 - - [02/Feb/2024:21:38:04 +0000] "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 101 143 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" "-"
