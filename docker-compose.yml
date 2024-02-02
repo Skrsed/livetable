@@ -7,6 +7,9 @@ services:
     restart: always
     volumes:
       - ./frontend:/usr/src/app
+    environment:
+      - VUE_APP_BACKEND_HOST: "81.22.132.239"
+      - VUE_APP_BACKEND_PORT: "3000"
     networks:
       - nginx-net
     deploy:
