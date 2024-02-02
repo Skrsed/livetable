@@ -1,4 +1,8 @@
 import type { Item } from "@/stores/types"
+const {
+    VITE_SERVER_HOST,
+    VITE_SERVER_PORT
+} = import.meta.env
 
 interface RequestArgs {
     method: 'GET' | 'POST' | 'PUT' | 'DELETE',
@@ -11,18 +15,12 @@ export interface Pagination {
     itemsPerPage: number
 }
 
-const {
-    SERVER_HOST,
-    SERVER_PORT
-} = import.meta.env
-
-console.log({ SERVER_HOST, SERVER_PORT })
-
 const request = ({ method, endpoint, body: requestBody }: RequestArgs) => {
     const body = JSON.stringify(requestBody)
 
     // TODO: env
-    return fetch(`http://${SERVER_HOST}:${SERVER_PORT}/api/v1/${endpoint}`, {
+    // eslint-disable-next-line max-len
+    return fetch(`http://${VITE_SERVER_HOST}:${VITE_SERVER_PORT}/api/v1/${endpoint}`, {
         method,
         mode: 'cors',
         cache: 'no-cache',
