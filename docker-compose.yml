@@ -4,8 +4,7 @@ services:
     build:
       context: frontend
       dockerfile: dev.Dockerfile
-    # ports:
-    #   - 8081:${CLIENT_PORT}
+    restart: always
     volumes:
       - ./frontend:/usr/src/app
     networks:
@@ -24,6 +23,7 @@ services:
       dockerfile: dev.Dockerfile
     environment:
       MONGO_HOST: mongodb
+    restart: always
     volumes:
       - ./backend:/usr/src/app
       - /app/node_modules
