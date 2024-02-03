@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  frontend:
+    restart: unless-stopped
+  backend:
+    environment:
+      MONGO_HOST: mongodb
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:4.4
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - ./.mnt/mongo:/var/lib/mongodb/data
+  nginx:
+    depends_on:
+      - backend
+      - frontend
+    restart: unless-stopped
+    build:
+      context: ../nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "3000:3000"
+    volumes:
+      - ./.mnt/nginx/logs:/var/log/nginx/

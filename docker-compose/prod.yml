@@ -1,0 +1,48 @@
+version: '3.8'
+services:
+  frontend:
+    extends:
+      file: common.yml
+      service: frontend
+    build:
+      context: frontend
+      dockerfile: prod.Dockerfile
+    environment:
+      MODE: 'production'
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 200M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
+  backend:
+    extends:
+      file: common.yml
+      service: backend
+    build:
+      context: backend
+      dockerfile: prod.Dockerfile
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 200M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
+  mongodb:
+    extends:
+      file: common.yml
+      service: mongodb
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 200M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
+  nginx:
+    extends: common.yml

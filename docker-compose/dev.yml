@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  frontend:
+    extends:
+      file: common.yml
+      service: frontend
+    build:
+      context: frontend
+      dockerfile: dev.Dockerfile
+    stdin_open: true
+    ports:
+      - 8080:5173
+    environment:
+      MODE: 'development'
+  backend:
+    extends:
+      file: common.yml
+      service: backend
+    build:
+      context: backend
+      dockerfile: dev.Dockerfile
+    stdin_open: true
+    ports:
+      - 8080:3000
+    volumes:
+      - /app/node_modules
+      - ./backend:/usr/src/app
+    environment:
+      MODE: 'development'
+  mongodb:
+    extends:
+      file: common.yml
+      service: mongodb
+    ports:
+      - 27017:27017
+  nginx:
+    extends: common.yml
