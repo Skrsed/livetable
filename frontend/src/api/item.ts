@@ -1,8 +1,9 @@
 import type { Item } from "@/stores/types"
-const {
-    VITE_HOST,
-    VITE_SERVER_PORT
-} = import.meta.env
+import { serverHost } from "@config"
+
+const { VITE_SERVER_PORT } = import.meta.env
+
+console.log({ serverHost })
 
 interface RequestArgs {
     method: 'GET' | 'POST' | 'PUT' | 'DELETE',
@@ -20,7 +21,7 @@ const request = ({ method, endpoint, body: requestBody }: RequestArgs) => {
 
     // TODO: env
     // eslint-disable-next-line max-len
-    return fetch(`${VITE_HOST}:${VITE_SERVER_PORT}/api/v1/${endpoint}`, {
+    return fetch(`${serverHost}:${VITE_SERVER_PORT}/api/v1/${endpoint}`, {
         method,
         mode: 'cors',
         cache: 'no-cache',
