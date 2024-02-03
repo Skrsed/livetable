@@ -34,7 +34,7 @@ const run = async () => {
 
     app.use('/api/v1/', makeRoutes(logger, socket))
 
-    app.get('/', (_, req: Response) => req.send('healthcheck succeed'))
+    app.get('/', (_, req: Response) => req.send('healthcheck succeed!'))
 
     initErrorHandler(app)
     makeDocsPage(app)

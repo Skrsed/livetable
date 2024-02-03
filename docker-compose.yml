@@ -1,91 +1,43 @@
 version: '3.8'
 services:
   frontend:
+    extends:
+      file: docker-compose/common.yml
+      service: frontend
     build:
       context: frontend
       dockerfile: dev.Dockerfile
-    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - 8081:5173
+    environment:
+      MODE: 'development'
     volumes:
       - ./frontend:/usr/src/app
-    environment:
-      VITE_SERVER_HOST: "81.22.132.239"
-      VITE_CLIENT_HOST: "81.22.132.239"
-    networks:
-      - nginx-net
-    deploy:
-      resources:
-        limits:
-          cpus: '0.2'
-          memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   backend:
+    extends:
+      file: docker-compose/common.yml
+      service: backend
     build:
       context: backend
       dockerfile: dev.Dockerfile
-    environment:
-      MONGO_HOST: mongodb
-    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - 8080:3000
     volumes:
-      - ./backend:/usr/src/app
       - /app/node_modules
-    networks:
-      - mongodb-net
-      - nginx-net
-    deploy:
-      resources:
-        limits:
-          cpus: '0.2'
-          memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
+      - ./backend:/usr/src/app:delegated
+    environment:
+      MODE: 'development'
   mongodb:
-    image: mongo:4.4
-    restart: always
+    extends:
+      file: docker-compose/common.yml
+      service: mongodb
     ports:
       - 27017:27017
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-    volumes:
-      - ./.mnt/mongo:/var/lib/mongodb/data
-    networks:
-      - mongodb-net
-    deploy:
-      resources:
-        limits:
-          cpus: '0.2'
-          memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   nginx:
-    depends_on:
-      - backend
-      - frontend
-    restart: always
-    build:
-      context: nginx
-      dockerfile: dev.Dockerfile
-    ports:
-      - "80:80"
-      - "3000:3000"
-    volumes:
-      - ./.mnt/nginx/logs:/var/log/nginx/
-    networks:
-      - nginx-net
-    deploy:
-      resources:
-        limits:
-          cpus: '0.2'
-          memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
-networks:
-  mongodb-net:
-    driver: bridge
-  nginx-net:
-    driver: bridge
+    extends:
+      file: docker-compose/common.yml
+      service: nginx
