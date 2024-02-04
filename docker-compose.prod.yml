@@ -4,11 +4,6 @@ services:
     build:
       context: frontend
       dockerfile: prod.Dockerfile
-    restart: always
-    volumes:
-      - ./frontend:/usr/src/app
-    networks:
-      - nginx-net
     deploy:
       resources:
         limits:
@@ -18,18 +13,12 @@ services:
           cpus: '0.0001'
           memory: 20M
   backend:
+    extends:
+      file: app.compose.yml
+      service: backend
     build:
       context: backend
-      dockerfile: Dockerfile
-    environment:
-      MONGO_HOST: mongodb
-    restart: always
-    volumes:
-      - ./backend:/usr/src/app
-      - /app/node_modules
-    networks:
-      - mongodb-net
-      - nginx-net
+      dockerfile: prod.Dockerfile
     deploy:
       resources:
         limits:
@@ -39,17 +28,12 @@ services:
           cpus: '0.0001'
           memory: 20M
   mongodb:
-    image: mongo:4.4
-    restart: always
-    ports:
-      - 27017:27017
+    extends:
+      file: app.compose.yml
+      service: mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
-    volumes:
-      - ./.mnt/mongo:/var/lib/mongodb/data
-    networks:
-      - mongodb-net
     deploy:
       resources:
         limits:
@@ -59,20 +43,9 @@ services:
           cpus: '0.0001'
           memory: 20M
   nginx:
-    depends_on:
-      - backend
-      - frontend
-    restart: always
-    build:
-      context: nginx
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
-      - "3000:3000"
-    volumes:
-      - ./.mnt/nginx/logs:/var/log/nginx/
-    networks:
-      - nginx-net
+    extends:
+      file: app.compose.yml
+      service: nginx
     deploy:
       resources:
         limits:
@@ -81,8 +54,3 @@ services:
         reservations:
           cpus: '0.0001'
           memory: 20M
-networks:
-  mongodb-net:
-    driver: bridge
-  nginx-net:
-    driver: bridge
