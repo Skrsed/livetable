@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  frontend:
+    restart: unless-stopped
+    volumes:
+      - ./frontend:/usr/src/app
+  backend:
+    environment:
+      MONGO_HOST: mongodb
+    restart: unless-stopped
+  mongodb:
+    image: mongo:4.4
+    restart: unless-stopped
+    volumes:
+      - ./.mnt/mongo:/var/lib/mongodb/data
+  nginx:
+    depends_on:
+      - backend
+      - frontend
+    restart: unless-stopped
+    build:
+      context: nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "3000:3000"
+    volumes:
+      - ./.mnt/nginx/logs:/var/log/nginx/
