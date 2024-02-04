@@ -11,7 +11,6 @@
 - `docker-compose up -d --build` run localy
 - `docker-compose -f docker-compose.yml up -d --build` run with prod env (ci only)
 
-
 #### TODO:
 - tests with cypress
 - unit tests
