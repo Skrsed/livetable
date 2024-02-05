@@ -1,11 +1,14 @@
 import { allFields, allItems, allItemsCount, createItem, deleteItem, singleItem, updateItem } from '../models/Item'
 import { Args } from '../types/common'
 
-export const all = async ({ res, req }: Args): Promise<void> => {
+export const all = async ({ res, req, log }: Args): Promise<void> => {
     const {
         page,
         itemsPerPage
     }: { page: number, itemsPerPage: number } = req.body
+
+    log.info(`get items page on page ${page} with limit ${itemsPerPage}`)
+
     const items = await allItems({
         offset: page - 1,
         limit: itemsPerPage,
@@ -14,8 +17,10 @@ export const all = async ({ res, req }: Args): Promise<void> => {
     res.send(items)
 }
 
-export const one = async ({ res, req }: Args): Promise<void> => {
+export const one = async ({ res, req, log }: Args): Promise<void> => {
     const { id } = req.params
+
+    log.info(`get item by id ${id}`)
 
     const item = await singleItem({
         id
@@ -24,7 +29,9 @@ export const one = async ({ res, req }: Args): Promise<void> => {
     res.send(item)
 }
 
-export const count = async ({ res }: Args): Promise<void> => {
+export const count = async ({ res, log }: Args): Promise<void> => {
+    log.info('count items')
+
     const count = await allItemsCount()
 
     res.send(count.toString())
@@ -61,7 +68,7 @@ export const remove = async ({ req, res, socket, log }: Args): Promise<void> => 
 }
 
 export const update = async ({ log, req, res, socket }: Args): Promise<void> => {
-    const { fields } = req.body
+    const { ...fields } = req.body
     const { id } = req.params
 
     log.info(`update item ${id}`)
@@ -73,7 +80,9 @@ export const update = async ({ log, req, res, socket }: Args): Promise<void> => 
     res.send(newItem)
 }
 
-export const fields = async ({ res }: Args): Promise<void> => {
+export const fields = async ({ res, log }: Args): Promise<void> => {
+    log.info('get fields')
+
     const [{ fields }] = await allFields()
 
     res.send(fields)

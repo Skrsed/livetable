@@ -6,7 +6,7 @@ const {
     MONGO_PASSWORD = 'example',
     MONGO_HOST = 'localhost',
     MONGO_PORT = '27017',
-    MONGO_DB = 'test'
+    MONGO_DB = 'app'
 } = process.env
 
 export const connectMongodb = async (log: Logger) => {

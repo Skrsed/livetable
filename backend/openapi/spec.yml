@@ -10,8 +10,6 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-  # TODO: do something with that pls
-  - url: http://backend:3000/api/v1
   - url: http://localhost:3000/api/v1
 tags:
   - name: item
@@ -81,7 +79,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
-  /item/:id:
+  /item/one/{id}:
     get:
       tags:
         - item
@@ -93,7 +91,7 @@ paths:
           description: id of updating item
           required: true
           schema:
-            type: string
+            $ref: '#/components/schemas/ObjectId'
       responses:
         '200':
           description: Null response
@@ -119,13 +117,13 @@ paths:
           description: id of updating item
           required: true
           schema:
-            type: string
+            $ref: '#/components/schemas/ObjectId'
       requestBody:
         description: Update an existent item in the store
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Item'
+              $ref: '#/components/schemas/Fields'
       responses:
         '200':
           description: Updated item
@@ -151,7 +149,7 @@ paths:
           description: id of updating item
           required: true
           schema:
-            type: string
+            $ref: '#/components/schemas/ObjectId'  
       responses:
         '204':
           description: item deleted
@@ -167,13 +165,17 @@ components:
       type: object
       properties:
         _id:
-          oneOf:
-            - type: object   # mongo's itemId object (converts to string on deserialization)
-            - type: string
+          $ref: '#/components/schemas/ObjectId'
         fields:
           type: object
       required:
         - fields
+    ObjectId:
+      oneOf:
+        - type: string
+          maxLength: 24
+          minLength: 24
+        - type: object   # mongo's itemId object (converts to string on deserialization)
     Error:
       type: object
       description: error answer

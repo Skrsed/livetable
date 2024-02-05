@@ -49,7 +49,7 @@ export const createItem = (fields: object): any => {
 
 // make type
 export const updateItem = ({ _id, fields }: Item) => {
-    return ItemModel.findByIdAndUpdate(_id, { fields }).exec()
+    return ItemModel.findByIdAndUpdate(_id, { fields }, { new: true }).exec()
 }
 
 export const deleteItem = (id: string) => {

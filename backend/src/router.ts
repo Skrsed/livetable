@@ -25,7 +25,7 @@ export const makeRoutes = (log: Logger, socket: SocketServer): Router => {
     router.delete('/item/delete/:id/', make(remove))
     router.get('/item/count', make(count))
     router.get('/item/fields', make(fields))
-    router.get('item/:id/', make(one))
+    router.get('/item/one/:id/', make(one))
 
     return router
 }

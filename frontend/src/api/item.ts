@@ -74,7 +74,7 @@ const update = ({ id, fields }: { id: string, fields: object }) => {
     return request({
         method: 'PUT',
         endpoint: `item/update/${id}`,
-        body: { fields }
+        body: fields
     })
 }
 
