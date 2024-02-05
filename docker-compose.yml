@@ -17,6 +17,8 @@ services:
     extends:
       file: app.compose.yml
       service: backend
+    depends_on:
+      - mongodb
     build:
       context: backend
       dockerfile: dev.Dockerfile
@@ -38,3 +40,6 @@ services:
     extends:
       file: app.compose.yml
       service: nginx
+    depends_on:
+      - backend
+      - frontend

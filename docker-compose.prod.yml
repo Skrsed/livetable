@@ -19,6 +19,8 @@ services:
     build:
       context: backend
       dockerfile: prod.Dockerfile
+    depends_on:
+      - mongodb
     deploy:
       resources:
         limits:
@@ -46,6 +48,9 @@ services:
     extends:
       file: app.compose.yml
       service: nginx
+    depends_on:
+      - backend
+      - frontend
     deploy:
       resources:
         limits:

@@ -14,9 +14,6 @@ services:
     volumes:
       - ./.mnt/mongo:/var/lib/mongodb/data
   nginx:
-    depends_on:
-      - backend
-      - frontend
     restart: unless-stopped
     build:
       context: nginx
