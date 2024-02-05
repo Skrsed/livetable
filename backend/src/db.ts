@@ -1,4 +1,4 @@
-import { connect } from 'mongoose'
+import { connect, disconnect } from 'mongoose'
 import { Logger } from 'pino'
 
 const {
@@ -6,7 +6,7 @@ const {
     MONGO_PASSWORD = 'example',
     MONGO_HOST = 'localhost',
     MONGO_PORT = '27017',
-    MONGO_DB = 'app'
+    MONGO_DB = 'test'
 } = process.env
 
 export const connectMongodb = async (log: Logger) => {
@@ -22,3 +22,5 @@ export const connectMongodb = async (log: Logger) => {
         process.exit(1)
     }
 }
+
+export const disconnectMongodb = () => disconnect()

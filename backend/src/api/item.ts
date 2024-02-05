@@ -1,4 +1,4 @@
-import { allFields, allItems, allItemsCount, createItem, deleteItem, updateItem } from '../models/Item'
+import { allFields, allItems, allItemsCount, createItem, deleteItem, singleItem, updateItem } from '../models/Item'
 import { Args } from '../types/common'
 
 export const all = async ({ res, req }: Args): Promise<void> => {
@@ -12,6 +12,16 @@ export const all = async ({ res, req }: Args): Promise<void> => {
     })
 
     res.send(items)
+}
+
+export const one = async ({ res, req }: Args): Promise<void> => {
+    const { id } = req.params
+
+    const item = await singleItem({
+        id
+    })
+
+    res.send(item)
 }
 
 export const count = async ({ res }: Args): Promise<void> => {

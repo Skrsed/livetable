@@ -81,6 +81,32 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
+  /item/:id:
+    get:
+      tags:
+        - item
+      summary: Get item by id
+      operationId: getItem
+      parameters:
+        - name: id
+          in: path
+          description: id of updating item
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Null response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
   /item/update/{id}:
     put:
       tags:
@@ -141,11 +167,12 @@ components:
       type: object
       properties:
         _id:
-          type: string
+          oneOf:
+            - type: object   # mongo's itemId object (converts to string on deserialization)
+            - type: string
         fields:
           type: object
       required:
-        - id
         - fields
     Error:
       type: object

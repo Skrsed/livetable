@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose'
 
-interface Item {
+export interface Item {
     _id: string,
     fields: object,
 }
@@ -25,6 +25,12 @@ export const allItems = ({
         .find({})
         .skip(offset * limit)
         .limit(limit)
+        .exec()
+}
+
+export const singleItem = ({ id }: { id: string }) => {
+    return ItemModel
+        .findById(id)
         .exec()
 }
 

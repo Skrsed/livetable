@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express'
-import { all, count, create, fields, remove, update } from './api/item'
+import { all, count, create, fields, one, remove, update } from './api/item'
 import { Logger } from 'pino'
 import { Server as SocketServer } from 'socket.io'
 
@@ -25,6 +25,7 @@ export const makeRoutes = (log: Logger, socket: SocketServer): Router => {
     router.delete('/item/delete/:id/', make(remove))
     router.get('/item/count', make(count))
     router.get('/item/fields', make(fields))
+    router.get('item/:id/', make(one))
 
     return router
 }
