@@ -3,8 +3,6 @@ import { serverHost } from "@config"
 
 const { VITE_SERVER_PORT } = import.meta.env
 
-console.log({ serverHost })
-
 interface RequestArgs {
     method: 'GET' | 'POST' | 'PUT' | 'DELETE',
     body?: object,

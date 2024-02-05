@@ -20,7 +20,7 @@ const {
     <v-autocomplete
         clearable
         chips
-        label="Autocomplete"
+        label="Headers"
         v-model="selectedFields"
         :items="headers"
         multiple

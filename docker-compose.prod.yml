@@ -9,9 +9,6 @@ services:
         limits:
           cpus: '0.2'
           memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   backend:
     extends:
       file: app.compose.yml
@@ -26,9 +23,6 @@ services:
         limits:
           cpus: '0.2'
           memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   mongodb:
     extends:
       file: app.compose.yml
@@ -41,9 +35,6 @@ services:
         limits:
           cpus: '0.2'
           memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   nginx:
     extends:
       file: app.compose.yml
@@ -56,6 +47,3 @@ services:
         limits:
           cpus: '0.2'
           memory: 200M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
